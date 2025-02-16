@@ -27,7 +27,7 @@ namespace LearnAPI.Helper
         {
             if (!Request.Headers.ContainsKey("Authorization")) ;
             {
-                return AuthenticateResult.Fail("No header found");
+                return AuthenticateResult.Fail("No header founds");
             }
             var headerValue = AuthenticationHeaderValue.Parse(Request.Headers["Authorization"]);
             if (headerValue == null) 
